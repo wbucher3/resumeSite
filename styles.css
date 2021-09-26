@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gainsboro;
+}
+header {
+    text-align: center;
+}
+
+/* TODO
+    - make it so they stack on mobile
+    - make it look more compress on a larger screen
+*/
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    column-gap: 3em;
+    row-gap: 1em;
+    padding-bottom: 1em;
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 7pt;
+    box-shadow: 0 0 0 1pt grey;
+    padding: 1rem;
+    padding-top: 0;
+    max-width: 300px;
+    min-width: 300px;
+    word-wrap: break-word;
+}
+.card h3 {
+    font-size: 140%
+}
+.card p, .card li{
+    font-size: 120%;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction:column;
+        row-gap: 1em;
+        align-items:center;
+
+    }
+
+    
+}
