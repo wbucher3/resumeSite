@@ -14,10 +14,6 @@ h2 {
     margin: 0;
 }
 
-/* TODO
-    - make it so they stack on mobile
-    - make it look more compress on a larger screen
-*/
 
 header h2 {
     display: flex;
@@ -30,11 +26,22 @@ header h2 {
 .row {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     column-gap: 3em;
     row-gap: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1em;  
 
+}
+
+.TitleCard {
+    background-color: white;
+    border-radius: 7pt;
+    box-shadow: 0 0 0 1pt grey;
+    padding: 1rem;
+    padding-top: 0;
+    word-wrap: break-word;
+
+    /* different from .card here */
+    width: 680px;
 }
 
 .card {
@@ -43,11 +50,11 @@ header h2 {
     box-shadow: 0 0 0 1pt grey;
     padding: 1rem;
     padding-top: 0;
-    max-width: 300px;
-    min-width: 300px;
+    
+    width: 300px;
     word-wrap: break-word;
 }
-.card h3 {
+.card h3, .TitleCard h3{
     font-size: 140%
 }
 .card p, .card li{
@@ -72,6 +79,9 @@ header h2 {
         row-gap: 1em;
         align-items:center;
 
+    }
+    .TitleCard {
+        max-width: 300px;
     }
 
     
