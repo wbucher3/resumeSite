@@ -60,6 +60,9 @@ header h2 {
 .card p, .card li{
     font-size: 120%;
 }
+em {
+    font-size: 75%;
+}
 
 @media screen and (max-width: 768px) {
     header h2 {
