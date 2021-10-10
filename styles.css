@@ -47,7 +47,7 @@ header h2 {
 .card {
     background-color: white;
     border-radius: 7pt;
-    box-shadow: 0 0 0 1pt grey;
+    box-shadow: 0 0 0 1pt rgb(104, 73, 73);
     padding: 1rem;
     padding-top: 0;
     
